@@ -8,5 +8,4 @@ with open ("home.html", "r") as html_file:
     courses_html_tags = soup.find_all('h5')
     
     for course in courses_html_tags:
-        print(course.text)
     
