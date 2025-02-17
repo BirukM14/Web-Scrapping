@@ -5,6 +5,8 @@ with open ("home.html", "r") as html_file:
     
     soup = BeautifulSoup(content, 'lxml')
     
-    tags = soup.find_all('h5')
+    courses_html_tags = soup.find_all('h5')
     
-    print(tags)
+    for course in courses_html_tags:
+        print(course.text)
+    
